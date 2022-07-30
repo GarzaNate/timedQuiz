@@ -47,13 +47,28 @@ var q = [
 var strtBtn = document.createElement("button");
 strtBtn.innerHTML = ('Begin!');
 start.appendChild(strtBtn);
-start.addEventListener('click', function strtQuiz(event){
+strtBtn.addEventListener('click', function strtQuiz(event){
     event.preventDefault()
 });
 // user sees  question w/ 4 possible answers
     // .innerText .innerHTML / dynamic HTML generation / class hide - remove hide class
-console.log(q[0].question);
-console.log(q[0].answers)
+
+// this isn't correct yet
+// strtQuiz.onclick = function strtQuiz() {
+//     var number = 0
+//     console.log(q[number],question);
+//     comsole.log(q[number].answers);
+//     number ++;
+// };    
+
+
+// this adds the question to the div
+// document.getElementById('questions').innerHTML = ();
+
+
+// console.log(q[0].question);
+// console.log(q[0].answers)
+
 // select an answer
 // correct or incorrect message appears
 // time has run out or questions have ended
