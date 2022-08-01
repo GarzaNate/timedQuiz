@@ -47,19 +47,20 @@ var q = [
 var strtBtn = document.createElement("button");
 strtBtn.innerHTML = ('Begin!');
 start.appendChild(strtBtn);
-strtBtn.addEventListener('click', function strtQuiz(event){
-    event.preventDefault()
-});
+
+strtBtn.addEventListener("click", strtQuiz);
 // user sees  question w/ 4 possible answers
     // .innerText .innerHTML / dynamic HTML generation / class hide - remove hide class
 
-// this isn't correct yet
-// strtQuiz.onclick = function strtQuiz() {
-//     var number = 0
-//     console.log(q[number],question);
-//     comsole.log(q[number].answers);
-//     number ++;
-// };    
+function strtQuiz (event) {
+    event.preventDefault();
+    var number = 0;
+    var q1 = console.log(q[number].question);
+    var q1 = document.getElementById('questions').innerHTML(q[0]);
+    var a1 = console.log(q[number].answers);
+    number ++;
+};    
+
 
 
 // this adds the question to the div
