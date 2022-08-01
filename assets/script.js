@@ -55,11 +55,24 @@ strtBtn.addEventListener("click", strtQuiz);
 function strtQuiz (event) {
     event.preventDefault();
     var number = 0;
-    var q1 = console.log(q[number].question);
-    var q1 = document.getElementById('questions').innerHTML(q[0]);
-    var a1 = console.log(q[number].answers);
+   // var q1 = console.log(q[number].question);
+    var q1 = questions.innerHTML = (q[number].question);
+    var a1 = questions.innerHTML = (q[number].answers);
+   // var a1 = console.log(q[number].answers);
     number ++;
 };    
+
+
+// timer
+
+// var timeleft = 60;
+// var gameTimer = setInterval(function(){
+//   if(timeleft <= 0){
+//     clearInterval(gameTimer);
+//   }
+//   document.timer.value = 60 - timeleft;
+//   timeleft -= 1;
+// }, 1000);
 
 
 
